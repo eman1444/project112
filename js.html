@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function myfun1()
+        {
+            var x,text;
+            x=document.getElementById("num").value;
+            if(isNaN(x) ||x<1 ||x>10){
+                text="input not valid";
+
+            }else{
+                text="input ok";
+            }
+            document.getElementById("res").innerHTML=text;
+        }
+</script>
+
+</head>
+<body>
+  <h1>what can js do?</h1>  
+  <p id="p1">js can change html content </p>
+  <button type="button" onclick="document.getElementById('p1').innerHTML
+                 ='hellow js'">click me</button>
+
+                 <!-- //////////////////////// -->
+
+<p  >click over the image</p>
+<button type="button" onclick="myfun()">this is change</button>
+<!-- ///////////////// -->
+
+<input type="number" id="num">
+<button onclick="myfun1()">check</button>
+<p id="res"></p>
+
+<!-- ///////////// -->
+<img src="2.jpg" id="im1" alt="" onclick="changimage()" width="200" height="200">
+<script>
+    function changimage(){
+        var m=document.getElementById('im1');
+        if(m.src.match("2")){
+            m.src="3.jpg";
+        }else
+        {
+            m.src="2.jpg"
+        }
+        // window.alert("okjjjjjjjjjjjjjjjj");
+    }
+   document.write(3+50);
+console.log(2+22);
+</script>
+</body>
+<script src="test.js"></script>
+</html>
